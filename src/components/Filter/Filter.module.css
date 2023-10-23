@@ -1,0 +1,21 @@
+.filterName {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto 1rem;
+  align-items: center;
+  font-size: large;
+  text-align: left;
+  padding: 0.5rem 15rem 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+.filterName:focus,
+.filterName:hover,
+.filterName:active {
+  background-color: rgba(223, 204, 251, 0.956);
+  border: 3px solid #713abe;
+}
+
+.filterLabel {
+  margin-left: 15px;
+}

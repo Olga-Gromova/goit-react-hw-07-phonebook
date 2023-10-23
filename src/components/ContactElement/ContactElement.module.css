@@ -1,0 +1,66 @@
+.contactListItemBtn {
+  /* margin-top: 16px;
+  margin-bottom: 8px; */
+  background-color: rgba(229, 207, 247, 0.8);
+  border: none;
+  border-radius: 15px;
+  /* color: #300447; */
+
+  /* font-size: 15px; */
+  /* height: 36px; */
+  margin-left: auto;
+  /* margin-right: 6px;
+  min-width: 50px; */
+  padding: 0 16px 0 16px;
+  cursor: pointer;
+}
+
+.contactListItemBtn:hover,
+.contactListItemBtn:focus,
+.contactListItemBtn:active {
+  background-color: #972c28;
+  cursor: pointer;
+  box-shadow: #972c28 0px 5px 15px;
+}
+
+.contactListItem {
+  color: #0f4326;
+  margin-top: auto;
+  text-align: start;
+}
+
+.contactItemSvg {
+  /* margin-right: 10px; */
+  text-align: center;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.contactAvatar {
+  margin: 10px 0px 10px 10px;
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0px 5px 0px 5px;
+  /* border-bottom: 1px solid #300447; */
+  border-radius: 15px;
+  background-color: rgba(229, 207, 247, 0.8);
+}
+
+.dataDiv {
+  padding-left: 8px;
+  color: #300447;
+  margin-bottom: 4px;
+}
+
+.contactAvatar {
+  width: 40px;
+  height: 40px;
+  color: #300447;
+}

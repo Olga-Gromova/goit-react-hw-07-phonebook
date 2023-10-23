@@ -1,0 +1,17 @@
+.mainDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2b184d;
+}
+
+.mainTitle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mainTitleContacts {
+  margin-top: auto;
+}
