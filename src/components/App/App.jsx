@@ -24,6 +24,8 @@ import { Loader } from 'components/Loader/Loader';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
 import css from './app.module.css';
+import { GiHollowCat } from 'react-icons/gi';
+
 
 // import { ContactList } from 'components/ContactList/ContactList';
 // import { ContactForm } from 'components';
@@ -56,12 +58,15 @@ export const App = () => {
       
         <ContactForm />
       <h2 className={css.mainTitleContacts}>Contacts</h2>
-
-      <div>
+      {contacts?.length === 0 ? ( 
+        <div className={css.emptyDiv}><GiHollowCat className={css.emptyIcon}/><p className={css.emptyText}>...Here is empty</p></div>
+        ) : (<div>
         {isLoading && <Loader />}
         {!isLoading && contacts.length > 0 && <Filter/>}
         {!isLoading && contacts.length > 0 && <ContactList />}
-      </div>
+      </div>)
+}
+      
       <Toaster position="top-center" />
     </div>
   );
