@@ -20,7 +20,7 @@ const contactsSlice = createSlice({
   name: 'contacts',
   initialState: contactsInitialState,
   extraReducers: builder => {
-    // Add reducers for additional action types here, and handle loading state as needed
+
     builder
       .addCase(fetchContacts.fulfilled, (state, action) => {
         state.isLoading = false;

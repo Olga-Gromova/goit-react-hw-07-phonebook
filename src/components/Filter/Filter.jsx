@@ -1,26 +1,3 @@
-// import { useDispatch } from 'react-redux';
-
-// import css from './Filter.module.css';
-// import { setFilter } from 'redux/filterSlice';
-
-// export const Filter = () => {
-//   const dispatch = useDispatch();
-
-//   return (
-//     <div>
-//       <label>
-//         Find contacts by Name
-//         <input
-//           className={css.filterName}
-//           onChange={e => dispatch(setFilter(e.currentTarget.value))}
-//           type="text"
-//           name="filter"
-//         />
-//       </label>
-//     </div>
-//   );
-// };
-
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from 'redux/filterSlice';
 import { getFilter } from 'redux/selectors';
@@ -38,17 +15,19 @@ export const Filter = () => {
 
   return (
     <div>
-      <label htmlFor={filterId} className={css.filterLabel}>Find contacts by name</label>
+      <label htmlFor={filterId} className={css.filterLabel}>
+        Find contacts by name
+      </label>
       <input
         id={filterId}
         className={css.filterName}
-      type="text"
-      name="filter"
-      placeholder="Find contacts by name"
-      value={filter}
+        type="text"
+        name="filter"
+        placeholder="Find contacts by name"
+        value={filter}
         onChange={handleFilterChange}
         autoComplete="name"
-    /></div>
-    
+      />
+    </div>
   );
 };
