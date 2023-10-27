@@ -51,7 +51,7 @@ export const ContactForm = () => {
 
     if (isNameDublicated(name)) {
       toast.error(
-        `Please, pay attentiion: Contact with name ${name} have already included in this phonebook.`
+        `, pay attentiion: Contact with name ${name} have already included in this phonebook.`
       );
       return;
     }
